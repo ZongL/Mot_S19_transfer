@@ -30,7 +30,7 @@ C:\srecord\bin\srec_cat data_extract.srec -fill 0xFF 0x34000000 0x342FFD00 -o da
 
 C:\srecord\bin\srec_cat data_extract_new.srec -offset -0x34000000 -o data.binn -Binary
 
-cmac_gen.exe
+python .\cmac_gen.py
 
 C:\srecord\bin\srec_cat CMAC.binn -binary -offset 0x342FFD00 -o CMAC.binn.srec
 
